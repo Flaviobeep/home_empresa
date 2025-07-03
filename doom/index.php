@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doom.</title>
+    <title>DoomCore</title>
 </head>
 <body>
 
@@ -72,13 +72,13 @@ if (!empty($dados["Sendlogin"])) {
 <input type="password" name="senha_usuario" placeholder="digite a senha" required><br><br>
 
 <input type="submit" name="Sendlogin" value="Acessar">
+<button onclick="window.location.href='index.html'" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+  
+</button>
+
 </form>
 <!-- fim do formulario -->
 
+
 </body>
-<div>
-    <h1>Play Xperience.</h1>
-    <p>Bem-vindo à minha empresa</p>
-    <p>Aqui vai ter uma div</p>
-    </div>
-    </div>
+
