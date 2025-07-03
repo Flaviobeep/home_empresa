@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro </title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color:#ac0909;
+    text-align: center;
+    padding: 20px;
+}
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #79070d(246, 244, 244, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+button {
+    background-color: #ac0909;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #79070d;
+}
+    </style>
+<script>
+    function redirecionar() {
+        window.location.href = "home.html"; // Altere para a página desejada
+    }
+</script>
+</head>
+<body>
+
+<h2>Cadastro na Pizzaria</h2>
+<form action="#" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <button type="submit" onclick="redirecionar()">Cadastrar</button>
+</form>
+
+</body>
+</html>
