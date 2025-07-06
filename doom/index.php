@@ -71,10 +71,7 @@ if (!empty($dados["Sendlogin"])) {
 <label>Senha: </label>
 <input type="password" name="senha_usuario" placeholder="digite a senha" required><br><br>
 
-<input type="submit" name="Sendlogin" value="Acessar">
-<button onclick="window.location.href='index.html'" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-  
-</button>
+
 
 </form>
 <!-- fim do formulario -->
