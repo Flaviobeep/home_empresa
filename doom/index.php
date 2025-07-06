@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="php.css>
 
 <html lang="en">
 <head>
@@ -71,10 +71,9 @@ if (!empty($dados["Sendlogin"])) {
 <label>Senha: </label>
 <input type="password" name="senha_usuario" placeholder="digite a senha" required><br><br>
 
-
-
+<input type="submit" name="Sendlogin" value="Acessar">
 </form>
-<!-- fim do formulario -->
+
 
 
 </body>
