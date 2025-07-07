@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-
-<link rel="stylesheet" href="php.css>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoomCore</title>
-</head>
-<body>
-
 <?php
 
 // Configurações do banco de dados
 $host = 'localhost';
 $user = 'root'; // usuário padrão do XAMPP
 $password = ''; // senha padrão do XAMPP (vazia)
-$database = 'system_cad'; // substitua pelo nome do seu banco de dados
+$database = 'login'; // substitua pelo nome do seu banco de dados
 
 // Conectar ao banco de dados
 $conn = new mysqli($host, $user, $password, $database);
@@ -25,9 +13,6 @@ $conn = new mysqli($host, $user, $password, $database);
 if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
-
-// Criptografia de senha (apenas para exemplo/criação de usuários)
-// echo password_hash(123456, PASSWORD_DEFAULT);
 
 // Receber dados do forms
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -73,8 +58,4 @@ if (!empty($dados["Sendlogin"])) {
 
 <input type="submit" name="Sendlogin" value="Acessar">
 </form>
-
-
-
-</body>
-
+<!-- fim do formulario -->
